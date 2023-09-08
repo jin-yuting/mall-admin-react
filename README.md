@@ -2,4 +2,4 @@
 
 # react18 + vite + react-router + axios + antd-
 
-# node 16.4.0
+# node 16.14.0

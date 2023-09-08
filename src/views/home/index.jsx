@@ -17,7 +17,6 @@ function Home() {
 
   return(
     <div>
-      <Button>1111</Button>
       首页
     </div>
   )

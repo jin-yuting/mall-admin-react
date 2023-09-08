@@ -6,7 +6,7 @@ import {
   UnorderedListOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu } from "antd";
-const { Header, Content, Footer, Sider } = Layout;
+const { Header, Content, Footer, Sider  } = Layout;
 
 function getItem(label, key, icon, children) {
   return {
@@ -21,14 +21,13 @@ const items = [
   getItem("首页", "/home", <PieChartOutlined />),
   getItem("模块管理", "sub1", <UnorderedListOutlined />, [
     getItem("分类管理", "/category"),
-    // getItem("商品管理", "4"),
+    getItem("商品管理", "/good"),
     getItem("会员管理", "/guest"),
-    // getItem("订单管理", "5",),
+    getItem("订单管理", "/order"),
   ]),
-  // getItem("Team", "sub2", <PieChartOutlined />, [
-  //   getItem("Team 1", "6"),
-  //   getItem("Team 2", "8"),
-  // ]),
+  getItem("系统管理", "sub2", <PieChartOutlined />, [
+    getItem("修改密码", "/account"),
+  ]),
 ];
 
 function App() {
@@ -57,7 +56,7 @@ function App() {
       </Sider>
       <Layout>
       <Header
-          style={{
+           style={{
             padding: 0,
           }}
         />
@@ -66,7 +65,13 @@ function App() {
         </Content>
         <Footer
           style={{
-            textAlign: "center",
+            textAlign: "left",
+            borderTop: '1px solid #e9e9e9',
+            height: '50px',
+            display: 'flex',
+            padding: '0 20px',
+            alignItems: 'center',
+            justifyContent: 'space-between',
           }}
         >
           Tina©2023

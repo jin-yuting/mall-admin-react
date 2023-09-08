@@ -36,6 +36,18 @@ const GetRouters = () =>{
           path:'guest',
           element: lazyLoad(lazy(() => import('../views/guest'))),
         },
+        {
+          path:'order',
+          element: lazyLoad(lazy(() => import('../views/order'))),
+        },
+        {
+          path:'good',
+          element: lazyLoad(lazy(() => import('../views/good'))),
+        },
+        {
+          path:'account',
+          element: lazyLoad(lazy(() => import('../views/account'))),
+        },
       ]
     },
     {
