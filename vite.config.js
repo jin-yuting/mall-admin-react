@@ -7,6 +7,13 @@ export default defineConfig({
   plugins: [
     react()
   ],
+  css: {
+    preprocessorOptions: {
+      less: {
+        math: 'always',
+      }
+    }
+  },
   resolve: {
     alias: {// 别名配置
       '@': path.resolve(__dirname, './src'),
