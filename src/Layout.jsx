@@ -55,11 +55,14 @@ function App() {
         />
       </Sider>
       <Layout>
-      <Header
-           style={{
-            padding: 0,
-          }}
-        />
+        <Header
+            style={{
+              padding: 0,
+              color: '#fff',
+            }}
+          >
+            Header
+        </Header>
         <Content>
           <Outlet />
         </Content>
